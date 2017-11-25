@@ -28,7 +28,8 @@
 #############################################################################
 
 # Default branch
-RELVER=$(/usr/bin/gawk '$1 == "OmniOS" {sub(/r/,""); print $3 }' /etc/release)
+# RELVER=$(/usr/bin/gawk '$1 == "OmniOS" {sub(/r/,""); print $3 }' /etc/release)
+RELVER=151024
 PVER=0.$RELVER
 
 # Which server to fetch files from

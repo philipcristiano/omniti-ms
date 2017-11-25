@@ -88,6 +88,7 @@ build32() {
         -Dvendorscript=${PREFIX}/bin \
         -des || \
     logerr "--- Configure failed"
+    gsed -i 's/-fstack-protector-strong//g;' config.sh
     gsed -i 's/-fstack-protector//g;' config.sh
     logmsg "--- make"
     logcmd gmake $MAKE_JOBS || \
@@ -123,6 +124,7 @@ build64() {
         -Dvendorscript=${PREFIX}/bin \
         -des || \
     logerr "--- Configure failed"
+    gsed -i 's/-fstack-protector-strong//g;' config.sh
     gsed -i 's/-fstack-protector//g;' config.sh
     gsed -i -e '/^lddlflags/{s/-G -m?64//;}' config.sh
     logmsg "--- make"

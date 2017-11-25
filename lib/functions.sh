@@ -686,7 +686,7 @@ make_package() {
         logcmd $PKGSEND -s $PKGSRVR publish $P5M_FINAL || \
             logerr "------ Failed to publish package"
     fi
-    logmsg "--- Published $FMRI" 
+    logmsg "--- Published $FMRI"
 }
 
 #############################################################################
@@ -1071,7 +1071,7 @@ test_if_core() {
     if logcmd pkg info ${PKG}; then
         logerr "------ Package ${PKG} appears to be installed.  Please uninstall it."
     else
-        logmsg "------ Not installed, good." 
+        logmsg "------ Not installed, good."
     fi
     if logcmd $PERL32 -M$MODNAME -e '1'; then
         # Module is in core, don't create a package

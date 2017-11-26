@@ -109,6 +109,10 @@ make_isaexec_stub_arch() {
             logerr "--- Failed to make isaexec stub for $DIR/$file"
     done
 }
+
+extract_archive() {
+    tar xfz $1
+}
 ##########
 
 

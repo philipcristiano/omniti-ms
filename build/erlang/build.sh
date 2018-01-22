@@ -31,6 +31,7 @@ PATH=$SRCDIR/bin:$PATH
 export PATH
 
 PROG=erlang
+MIRROR=http://erlang.org/
 
 OTPVER=20.0
 #REPO=git://github.com/slfritchie/otp.git
@@ -118,7 +119,7 @@ extract_archive() {
 
 init
 if [[ -z "$REPO" ]]; then
-  download_source $PROG otp_src_$OTPVER
+  download_source download otp_src_$OTPVER
 else
   clone_source
 fi

@@ -31,7 +31,7 @@ PATH=$SRCDIR/bin:$PATH
 export PATH
 
 PROG=erlang
-MIRROR=http://erlang.org/
+MIRROR=erlang.org
 
 OTPVER=20.2
 #REPO=git://github.com/slfritchie/otp.git

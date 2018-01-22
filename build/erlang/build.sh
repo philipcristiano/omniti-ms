@@ -33,9 +33,9 @@ export PATH
 PROG=erlang
 MIRROR=http://erlang.org/
 
-OTPVER=20.0
+OTPVER=20.2
 #REPO=git://github.com/slfritchie/otp.git
-VER=20.0.0
+VER=20.2.0
 VERHUMAN=$OTPVER
 PKG=omniti/runtime/erlang
 SUMMARY="Erlang OTP Platform"

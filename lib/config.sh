@@ -63,8 +63,8 @@ NOSCRIPTSTUB=
 PERLVERLIST="5.14.2"
 
 # Full paths to bins
-PERL32=/usr/perl5/5.14.2/bin/$ISAPART/perl
-PERL64=/usr/perl5/5.14.2/bin/$ISAPART64/perl
+PERL32=/usr/perl5/5.24/bin/$ISAPART/perl
+PERL64=/usr/perl5/5.24/bin/$ISAPART64/perl
 
 # Default Makefile.PL options
 PERL_MAKEFILE_OPTS="INSTALLSITEBIN=$PREFIX/bin/_ARCHBIN_ \
@@ -102,7 +102,7 @@ AWK=gawk
 
 # Figure out number of logical CPUs for use with parallel gmake jobs (-j)
 # Default to 1.5*nCPUs as we assume the build machine is 100% devoted to
-# compiling.  
+# compiling.
 # A build script may serialize make by setting NO_PARALLEL_MAKE
 LCPUS=`psrinfo | wc -l`
 MJOBS="$[ $LCPUS + ($LCPUS / 2) ]"
@@ -120,7 +120,7 @@ DONT_REMOVE_INSTALL_DIR=
 # C compiler options - these can be overriden by a build script
 #############################################################################
 # isaexec(3C) variants
-# These variables will be passed to the build to construct multi-arch 
+# These variables will be passed to the build to construct multi-arch
 # binary and lib directories in DESTDIR
 
 ISAPART=i386
